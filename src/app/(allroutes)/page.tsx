@@ -5,9 +5,34 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <section className="sm:mt-6 lg:mt-8 mt-12 max-w-7xl mx-auto md:min-h-screen px-4 sm:px-6 lg:px-8">
-        <div className="my-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
-          <div className="sm:text-center lg:text-left">
+      <section className="mx-auto md:min-h-screen">
+        <div className="px-4 sm:px-6 lg:px-8 flex mt-5 gap-3 justify-center items-center flex-col bg-gradient-to-br from-purple-700 to-purple-500 rounded-lg p-20 pb-40">
+          <h1 className="text-6xl font-semibold text-white mt-10">Break Free from Debt</h1>
+          <p className="text-xl text-white">Fid Your Path to Financial Freedom in Minutes!</p>
+          <ul className="mt-4 text-lg text-center sm:text-left font-serif list-disc space-y-4 my-5 text-white">
+            <li>
+              <p>
+                Take the First Step Toward Debt Relief – It&apos;s Just 4 Questions
+                Away!
+              </p>
+            </li>
+            <li>
+              <p>
+                Take Control of Your Finances Today – Start with Our Simple
+                Finder
+              </p>
+            </li>
+            <li>
+              <p>Debt-Free Future Starts Here – Discover How We Can Help You</p>
+            </li>
+          </ul>
+          <Link
+            href="/contact"
+            className="px-6 py-3 bg-purple-700 !text-white rounded-lg font-bold shadow-md hover:bg-purple-800"
+          >
+            Get Started Now
+          </Link>
+          {/* <div className="sm:text-center lg:text-left">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-6xl">
               <span className="block xl:inline">Advice to get rid of</span>
               <br />
@@ -22,7 +47,6 @@ export default function Home() {
               provide customized recommendations to help you achieve your
               financial goals.
             </p>
-            {/* Button Section */}
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
                 <Link
@@ -41,18 +65,17 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            {/* End of Button Section */}
-          </div>
+          </div> */}
           {/*   Image Section     */}
-          <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4 bg-gradient-to-r from-purple-700 to-purple-500 rounded-lg p-4 animate-pulse">
-            {/* <Image
+          {/* <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4 bg-gradient-to-r from-purple-700 to-purple-500 rounded-lg p-4 animate-pulse">
+            <Image
               className="rounded-lg"
               width={500}
               height={500}
               src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
               alt=""
-            /> */}
-          </div>
+            />
+          </div> */}
           {/*   End of Image Section     */}
         </div>
       </section>
@@ -134,8 +157,8 @@ export default function Home() {
                   </h3>
                   <p className="text-sm">
                     We use cutting-edge security measures to protect our
-                    customers&apos; sensitive information and ensure the safety of
-                    all transactions made on our site.
+                    customers&apos; sensitive information and ensure the safety
+                    of all transactions made on our site.
                   </p>
                 </div>
               </div>
